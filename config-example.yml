@@ -1,0 +1,16 @@
+---
+
+REPO_INSTALL_PATH: "/tmp/repos"
+
+# Gitlab configuration
+GITLAB_TOKEN: "glpat-xxx_xxxxxxxxxx-xxxx"
+GITLAB_HEADER_TOKEN: ""
+GITLAB_URL: ""
+
+# Ollama configuration
+OLLAMA_MODEL: "llama3:8b"  # https://www.ollama.com/library
+OLLAMA_OPTIONS: 
+  top_k: 25
+  mirostat_tau: 5.0
+  temperature: 0.5
+  top_p: 0.5
