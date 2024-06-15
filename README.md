@@ -19,6 +19,11 @@ The main objective of this bot is to streamline the review process. It offers a 
 4. Download your preferred model using `ollama pull <model name>` [Available models here](https://www.ollama.com/library)
 4. Run the bot using `gunicorn -w 2 iamksm_bot.app.webhook:AIR -b 0.0.0.0:7777 -k gevent --threads 4`
 
+Alternatively, you can build the image and run it locally with most of the above already setup.
+
+1. from the project dir, run `docker build -t iamksm-bot:0.0.1 .`
+2. Run docker compose up -d
+
 #### Note: Make sure the model you plan to use is already downloaded
 
 ## Here’s how it works:
