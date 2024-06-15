@@ -1,0 +1,13 @@
+services:
+    iamksm-bot:
+        image: "iamksm-bot:0.0.1"
+        restart: unless-stopped
+        container_name: iamksm-bot
+        env_file:
+            - .env
+        logging:
+            driver: journald
+        volumes:
+            - ./config.yml:/opt/iamksm/config.yml  
+        ports:
+          - "7777:7777"
